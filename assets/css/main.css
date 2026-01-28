@@ -5,6 +5,107 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* ==================== PROJELER BÖLÜMÜ STİLLERİ ==================== */
+
+/* Bölümün genel yapısı - Ekranı kaplaması ve arka planı için */
+#projects-section {
+    min-height: 100vh; /* En az bir tam ekran yüksekliğinde olsun */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Header'dan biraz daha koyu veya farklı bir ton arka plan */
+    background-color: rgba(33, 37, 41, 0.95); 
+    padding: 4em 2em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* İçerik ortalama */
+.content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Kartları yan yana dizen esnek kutu yapısı */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Sığmazsa alt satıra geç */
+    justify-content: center;
+    gap: 2em; /* Kartlar arası boşluk */
+}
+
+/* Bireysel Kart Tasarımı */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.05); /* Çok hafif şeffaf beyaz */
+    border-radius: 12px;
+    padding: 2.5em;
+    flex: 1 1 300px; /* Esnek genişlik, en az 300px olsun */
+    max-width: 350px; /* Çok genişlemesin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Hover Efekti - Fare ile üzerine gelince */
+.project-card:hover {
+    transform: translateY(-10px); /* Yukarı kaldır */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Gölge ekle */
+    background-color: rgba(255, 255, 255, 0.08); /* Rengi biraz aç */
+}
+
+/* İkon Kutusu */
+.card-icon {
+    font-size: 3.5em;
+    margin-bottom: 0.8em;
+    /* Sitenin vurgu rengi (butonlardaki mavi/turkuaz tonu yakalamaya çalıştım, değiştirebilirsin) */
+    color: #4db8ff; 
+}
+
+/* Kart Başlığı */
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+/* Kart Açıklaması */
+.project-card p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    flex-grow: 1; /* Butonu en alta itmek için */
+    margin-bottom: 2em;
+}
+
+/* Buton Alanı */
+.card-action {
+    width: 100%;
+}
+
+.card-action .button {
+    width: 100%; /* Buton kartı kaplasın */
+}
+
+/* Mobil Uyumluluk Ayarı (Gerekirse) */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+    }
+    #projects-section {
+        padding: 3em 1em;
+    }
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,

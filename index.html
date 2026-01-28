@@ -19,40 +19,127 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Burak Kutlu",
-            "url": "https://hi-burak.me",
-            "affiliation": {
-                "@type": "EducationalOrganization",
-                "name": "Istanbul University"
-            },
-            "jobTitle": "Economics Student & Undergraduate Researcher",
-            "sameAs": [
-                "https://github.com/jbkutlu", 
-                "https://www.linkedin.com/in/kutlu-burak/",
-                "https://x.com/jbkutlu"
-            ]
-        }
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Burak Kutlu",
+                "url": "https://hi-burak.me",
+                "jobTitle": "Economics Student & Undergraduate Researcher",
+                "affiliation": {
+                    "@type": "EducationalOrganization",
+                    "name": "Istanbul University",
+                    "sameAs": "https://iktisat.istanbul.edu.tr/"
+                },
+                "hasCredential": {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "educationalLevel": "Undergraduate",
+                    "about": {
+                        "@type": "Course",
+                        "name": "Economics"
+                    },
+                    "recognizedBy": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "Istanbul University",
+                        "sameAs": "https://iktisat.istanbul.edu.tr/"
+                    }
+                },
+                "knowsAbout": ["Economics", "TypeScript", "Rust", "Open Source Development", "Artificial Intelligence"],
+                "sameAs": [
+                    "https://github.com/jbkutlu", 
+                    "https://www.linkedin.com/in/kutlu-burak/",
+                    "https://x.com/jbkutlu"
+                ],
+                "publishingPrinciples": [
+                    "https://github.com/jbkutlu/awesome-economics",
+                    "https://github.com/jbkutlu/UniForm-mini",
+                    "https://github.com/jbkutlu/Finance.ts"
+                ],
+                "mainEntityOfPage": [
+                    {
+                        "@type": "CreativeWork",
+                        "name": "UniForm-mini",
+                        "description": "AI-powered data standardization tool",
+                        "url": "https://github.com/jbkutlu/UniForm-mini"
+                    },
+                    {
+                        "@type": "CreativeWork",
+                        "name": "awesome-economics",
+                        "description": "Curated list of economics resources",
+                        "url": "https://github.com/jbkutlu/awesome-economics"
+                    },
+                    {
+                        "@type": "CreativeWork",
+                        "name": "Finance.ts",
+                        "description": "TypeScript library for financial calculations",
+                        "url": "https://github.com/jbkutlu/Finance.ts"
+                    }
+                ]
+            }
         </script>
     </head>
     <body class="is-preload">
 
         <header id="header" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
-                <div class="content">
-                    <h1><a href="#">Burak Kutlu</a></h1>
-                    <p>Undergraduate Researcher<br />
-                    
-                    <ul class="actions">
-                        <li><a href="https://github.com/jbkutlu" target="_blank" class="button icon brands fa-github">GitHub</a></li>
-                        <li><a href="https://x.com/jbkutlu" target="_blank" class="button icon brands fa-twitter">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/kutlu-burak/" target="_blank" class="button icon brands fa-linkedin-in">LinkedIn</a></li>
-                        <!-- <li><a href="mailto:hello@hi-burak.me" class="button primary icon solid fa-envelope">İletişim</a></li> -->
-                    </ul>
+            <div class="content">
+                <h1><a href="#">Burak Kutlu</a></h1>
+                <p>Undergraduate Researcher<br />
+                
+                <ul class="actions">
+                    <li><a href="https://github.com/jbkutlu" target="_blank" class="button icon brands fa-github">GitHub</a></li>
+                    <li><a href="https://x.com/jbkutlu" target="_blank" class="button icon brands fa-twitter">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/kutlu-burak/" target="_blank" class="button icon brands fa-linkedin-in">LinkedIn</a></li>
+                    <!-- <li><a href="mailto:hello@hi-burak.me" class="button primary icon solid fa-envelope">İletişim</a></li> -->
+                </ul>
+            </div>
+            <div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="Burak Kutlu - Istanbul University Economics" /></div></div>
+        </header>
+
+        <section id="projects-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="cards-container">
+
+                    <article class="project-card">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i> </div>
+                        <div class="card-content">
+                            <h3>UniForm-mini</h3>
+                            <p>AI-powered data standardization tool built for Gemini 3 Hackathon. Streamlines data processing with intelligent models.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/jbkutlu/UniForm-mini" target="_blank" class="button small icon brands fa-github">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-icon">
+                            <i class="fas fa-layer-group"></i> </div>
+                        <div class="card-content">
+                            <h3>Awesome Economics</h3>
+                            <p>A curated list of modern economics resources, data science tools, academic papers, and open-source libraries.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/jbkutlu/awesome-economics" target="_blank" class="button small icon brands fa-github">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i> </div>
+                        <div class="card-content">
+                            <h3>Finance.ts</h3>
+                            <p>A modern TypeScript migration of the Finance.js library for precise financial calculations and analysis.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/jbkutlu/Finance.ts" target="_blank" class="button small icon brands fa-github">View on GitHub</a>
+                        </div>
+                    </article>
+
                 </div>
-                <div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="" /></div></div>
-            </header>
+            </div>
+        </section>
 
         <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/jquery.scrolly.min.js"></script>
